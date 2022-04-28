@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul span {
+  display:inline-block;
+  background-color:#b1ffe799;
+  margin: 3px;
+}
+
+ul li {
+ line-height:18px;
+ list-style-type: none;
+}
+
+span.short {
+  width: 60px;
+}
+
+span.tokenid {
+  width: 500px;
+}
+
+span.owner {
+  width: 240px;
+}
