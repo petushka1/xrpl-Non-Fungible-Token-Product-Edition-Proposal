@@ -10,7 +10,7 @@ To guarantee authenticity and protect customers from unauthorized additional iss
 NFT for digital and physical products can contain the type per branch and products with different editions specifying the real amount of items. So, Limited Edition and Single types of products are applicable to valuable collectibles and limited edition collections, which creates additional value for both author and consumer of the artwork.
 
 ## Live Demo
-[Watch Video](https://www.loom.com/share/d82d871d7ff94f8299655f07b82f6da8)
+[Watch Video](https://youtu.be/9DskMODoynU)
 
 ## Description
 
