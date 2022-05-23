@@ -1,0 +1,44 @@
+extends layout
+
+block content
+  h1 XRPL Fixarta proposal demo
+  p The purpose of the app is to be properly explained here
+  form(action='/' method='GET')
+    label( for='addr') XRPL address:
+    input(type='text' name='addr' id='addr' placeholder='Put your XPRL address here' value=addr size='40')
+    input(type='submit', value='Lookup')
+  if Object.keys(nftProdList).length > 0
+    h1 Your NFTs by product
+    each product, productId in nftProdList
+      h2 Fancy product with ID #{productId}
+      ul
+        li
+          span.short Serial
+          span.tokenid Token ID
+          span.short Taxon
+          span.short  URI
+          span.short Fee
+          span.owner Issuer
+        each nft in product
+          li
+            span.short #{nft.nft_serial}
+            span.tokenid #{nft.NFTokenID}
+            span.short #{nft.NFTokenTaxon}
+            span.short
+              a(href=nft.decodedURI) URI
+            span.short #{nft.TransferFee ? nft.TransferFee/1000 : '0'} %
+            span.owner #{nft.Issuer}
+
+  //-
+    if userInfo.data
+      p Authenticated user accunt data:
+      p #{JSON.stringify(userInfo.data)}
+      p User authenticated in XUMM by wallet:
+      p #{walletId}
+      p
+        a(href = '/nft/')
+          Try NFT operations
+    else
+      p You will be prompted to sign in with Google creds and then authenticate with XUMM
+    a(href = url)
+              button(type="button") #{buttonCaption}
