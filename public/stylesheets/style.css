@@ -1,31 +1,277 @@
 body {
-  padding: 50px;
-  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
-ul span {
-  display:inline-block;
-  background-color:#b1ffe799;
-  margin: 3px;
+h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-ul li {
- line-height:18px;
- list-style-type: none;
+p {
+  font-size: 1.5rem;
 }
 
-span.short {
-  width: 60px;
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
-span.tokenid {
-  width: 500px;
+.grid-container {
+  align-self: center;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: white;
 }
 
-span.owner {
-  width: 240px;
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*padding: 20px;*/
+
+}
+
+.header-text {
+  text-align: center;
+  padding: 64px 5% 64px 5%;
+  margin: 5%;
+  border-radius: 12px;
+  box-shadow: rgba(96, 61, 163, 0.2) 0px 8px 24px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.badge {
+  background-image: linear-gradient(to right, #a77aff, #6bcfff);
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 0;
+}
+
+.field {
+  padding: 0 12px;
+}
+
+.check-address {
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input, form label {
+  text-align: left;
+  font-size: 1em;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 30px;
+  height: 2em;
+  background-image: linear-gradient(to right, #a77aff, #6bcfff);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 30px;
+  height: 2em;
+  background-image: linear-gradient(to right, #6bcfff, #a77aff);
+  opacity: 0.7;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  margin-top: 20px;
+}
+
+.border-gradient {
+    border: double 0.1rem transparent;
+    border-radius: 6px;
+    height: 2em;
+    width: auto;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #a77aff, #6bcfff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    outline: none;
+}
+
+.border-gradient::placeholder {
+  padding: 20px 12px;
+}
+
+/* Token Table */
+.productList {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  list-style: none;
+  margin: 0 10%;
+  text-align: center;
+}
+
+.productList li {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+}
+
+.tokenId:hover {
+  align-self: center;
+  text-overflow: unset;
+  overflow: hidden;
+  display: inline-block;
+  white-space: wrap;
+}
+
+.tokenId:active {
+  align-self: center;
+  text-overflow: unset;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  opacity: 0.5;
+}
+
+span {
+  padding: 0 10px 0 10px;
+}
+
+.tokenId {
+  border: 0;
+}
+
+.spec span {
+  border-right: solid #a77aff 2px;
+  margin-bottom: 20px;
+}
+
+#last {
+  border-right: 0;
+}
+
+.spec {
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.sm {
+  text-align: center;
+  display: flex;
+  display: block;
+  position: relative;
+  top: 92%;
+  z-index: 1;
+}
+
+.sm img {
+  display: inline;
+  max-width: 50px;
+  height: auto;
+  padding: 5px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 5%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items:
+}
+
+.nav li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 70px;
+}
+
+.github {
+  width: 30px;
+  height: auto;
+}
+
+.logo:hover,
+.github:hover {
+  opacity: 0.5;
+}
+
+.logo:active,
+.github:active {
+  opacity: 1;
+}
+
+/*
+.worning {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding: 64px 5% 64px 5%;
+  margin: 5%;
+  border-radius: 12px;
+  box-shadow: rgba(96, 61, 163, 0.2) 0px 8px 24px;
+}
+*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+.addressCheck {
+  font-size: 1rem;
+}
+
+.border-gradient {
+  width: 100%;
+}
+
+  .sm img {
+    max-width: 30px;
+  }
 }
