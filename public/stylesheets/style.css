@@ -17,7 +17,7 @@ h2 {
   padding-bottom: 0;
 }
 
-p {
+.description {
   font-size: 1.5rem;
 }
 
@@ -239,32 +239,29 @@ span {
   opacity: 1;
 }
 
-/*
-.worning {
-  z-index: 2;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  text-align: center;
-  padding: 64px 5% 64px 5%;
-  margin: 5%;
-  border-radius: 12px;
-  box-shadow: rgba(96, 61, 163, 0.2) 0px 8px 24px;
-}
-*/
+@media only screen and (min-device-width: 641px) and (max-device-width: 1007px) and (orientation:portrait) {
+ 
+  .description {
+    font-size: 1.3rem;
+  }
 
-@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 640px) {
   body {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
 .addressCheck {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .border-gradient {
